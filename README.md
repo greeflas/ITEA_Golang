@@ -9,6 +9,7 @@ Code from lectures of Golang course in IT Education Academy.
 3. [Constants](constants.go)
 4. [Enum & iota](enum_iota.go)
 5. [If-else](if_else.go)
+6. [Switch](switch.go)
 
 ## Commands
 
