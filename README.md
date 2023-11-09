@@ -8,6 +8,7 @@ Code from lectures of Golang course in IT Education Academy.
 2. [Variables](variables.go)
 3. [Constants](constants.go)
 4. [Enum & iota](enum_iota.go)
+5. [If-else](if_else.go)
 
 ## Commands
 
