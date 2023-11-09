@@ -13,6 +13,7 @@ Code from lectures of Golang course in IT Education Academy.
 7. [For](for.go)
 8. [Arrays](arrays.go)
 9. [Slices](slices.go)
+10. [Map](map.go)
 
 ## Commands
 
