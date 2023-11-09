@@ -14,6 +14,7 @@ Code from lectures of Golang course in IT Education Academy.
 8. [Arrays](arrays.go)
 9. [Slices](slices.go)
 10. [Map](map.go)
+11. [Range](range.go)
 
 ## Commands
 
