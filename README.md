@@ -11,6 +11,7 @@ Code from lectures of Golang course in IT Education Academy.
 5. [If-else](if_else.go)
 6. [Switch](switch.go)
 7. [For](for.go)
+8. [Arrays](arrays.go)
 
 ## Commands
 
