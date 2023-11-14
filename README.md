@@ -16,6 +16,7 @@ Code from lectures of Golang course in IT Education Academy.
 10. [Map](map.go)
 11. [Range](range.go)
 12. [Functions](functions.go)
+13. [Closures](closures.go)
 
 ## Commands
 
