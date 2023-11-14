@@ -15,6 +15,7 @@ Code from lectures of Golang course in IT Education Academy.
 9. [Slices](slices.go)
 10. [Map](map.go)
 11. [Range](range.go)
+12. [Functions](functions.go)
 
 ## Commands
 
