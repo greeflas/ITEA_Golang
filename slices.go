@@ -55,4 +55,28 @@ func main() {
 	animals[2] = "snake"
 	fmt.Println(animals)
 	fmt.Println(homeAnimals)
+
+	// part 3
+	fmt.Println()
+	sliceMutationCase()
+}
+
+func sliceMutationCase() {
+	sli := make([]int, 0, 3)
+	sli = append(sli, 10)
+	sli = append(sli, 40)
+
+	fmt.Printf("before\t\tlen(%d) cap(%d) %p %v\n", len(sli), cap(sli), sli, sli)
+
+	mutatedSli := mutateSlice(sli)
+	fmt.Printf("after\t\tlen(%d) cap(%d) %p %v\n", len(sli), cap(sli), sli, sli)
+
+	fmt.Printf("mutatedSli\tlen(%d) cap(%d) %p %v\n", len(mutatedSli), cap(mutatedSli), mutatedSli, mutatedSli)
+}
+
+func mutateSlice(s []int) []int {
+	s = append(s, 90)
+	fmt.Printf("mutateSlice\tlen(%d) cap(%d) %p %v\n", len(s), cap(s), s, s)
+
+	return s
 }
