@@ -21,6 +21,7 @@ Code from lectures of Golang course in IT Education Academy.
 15. [Structs](structs.go)
 16. [Methods](methods.go)
 17. [Embedding](embedding.go)
+18. [Interfaces](interfaces.go)
 
 ## Commands
 
