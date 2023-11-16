@@ -20,6 +20,7 @@ Code from lectures of Golang course in IT Education Academy.
 14. [Pointers](pointers.go)
 15. [Structs](structs.go)
 16. [Methods](methods.go)
+17. [Embedding](embedding.go)
 
 ## Commands
 
