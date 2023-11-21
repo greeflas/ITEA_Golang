@@ -52,6 +52,7 @@ func loadEnv(envFilePath string) error {
 	if err != nil {
 		return fmt.Errorf("loadEnv: cannot open file: %q: %w", envFilePath, err)
 	}
+	defer f.Close()
 
 	scanner := bufio.NewScanner(f)
 	for scanner.Scan() {
@@ -65,8 +66,6 @@ func loadEnv(envFilePath string) error {
 			return fmt.Errorf("loadEnv: cannot set env var: %q: %w", name, err)
 		}
 	}
-
-	f.Close()
 
 	return nil
 }
