@@ -23,6 +23,12 @@ Code from lectures of Golang course in IT Education Academy.
 17. [Embedding](embedding.go)
 18. [Interfaces](interfaces.go)
 
+## Solutions
+
+Here you can find solutions for part of home works.
+
+4. [Users DB](solutions/4_users_db/main.go)
+
 ## Commands
 
 `go build main.go` - compile `main.go` file in current directory
