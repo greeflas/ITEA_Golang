@@ -23,6 +23,7 @@ Code from lectures of Golang course in IT Education Academy.
 17. [Embedding](embedding.go)
 18. [Interfaces](interfaces.go)
 19. [Env variables](env_variables.go)
+20. [Errors](errors.go)
 
 ## Solutions
 
