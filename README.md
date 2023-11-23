@@ -42,3 +42,11 @@ Here you can find solutions for part of home works.
 `go build main.go` - compile `main.go` file in current directory
 
 `go run main.go` - compile and run `main.go` file in current directory
+
+`go run .` - compile and run all source files in current directory (must be run in directory with `main()` function)
+
+`go mod init project_name` - create new project with packages support
+
+`go get module_name` - install external library
+
+`go mod tidy` - remove unused libs from `go.mod` & remove `// indirect comment`
