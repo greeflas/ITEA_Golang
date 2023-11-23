@@ -27,6 +27,7 @@ Code from lectures of Golang course in IT Education Academy.
 21. [Defer](defer.go)
 22. [Panic, recover](panic_recover.go)
 23. [Packages](packages)
+24. [Libs](libs)
 
 ## Solutions
 
