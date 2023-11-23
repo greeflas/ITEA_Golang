@@ -32,6 +32,7 @@ Code from lectures of Golang course in IT Education Academy.
 Here you can find solutions for part of home works.
 
 4. [Users DB](solutions/4_users_db/main.go)
+5. [Student grades](solutions/5_grades/main.go)
 
 ## Commands
 
