@@ -26,6 +26,7 @@ Code from lectures of Golang course in IT Education Academy.
 20. [Errors](errors.go)
 21. [Defer](defer.go)
 22. [Panic, recover](panic_recover.go)
+23. [Packages](packages)
 
 ## Solutions
 
