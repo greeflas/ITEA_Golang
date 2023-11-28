@@ -30,6 +30,7 @@ Code from lectures of Golang course in IT Education Academy.
 24. [Libs](libs)
 25. [Database](database)
 26. [Unit tests](unit_tests)
+27. [Integration tests (godog)](integration_tests)
 
 ## Solutions
 
@@ -51,3 +52,5 @@ Here you can find solutions for part of home works.
 `go get module_name` - install external library
 
 `go mod tidy` - remove unused libs from `go.mod` & remove `// indirect comment`
+
+`go test -v ./...` - run all tests in the project
