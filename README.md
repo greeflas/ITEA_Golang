@@ -29,6 +29,7 @@ Code from lectures of Golang course in IT Education Academy.
 23. [Packages](packages)
 24. [Libs](libs)
 25. [Database](database)
+26. [Unit tests](unit_tests)
 
 ## Solutions
 
