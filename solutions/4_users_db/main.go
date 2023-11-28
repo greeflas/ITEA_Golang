@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 const (
 	cmdHelp   = "help"
@@ -24,8 +26,14 @@ func main() {
 	printWelcome()
 
 	for {
-		cmd := getCommand()
-		handleCommand(cmd)
+		cmd, err := getCommand()
+		if err != nil {
+			panic(err) // could be log entry instead of panic
+		}
+
+		if err := handleCommand(cmd); err != nil {
+			panic(err) // could be log entry instead of panic
+		}
 	}
 }
 
@@ -48,31 +56,35 @@ func printBorder(len int) {
 	fmt.Println()
 }
 
-func getCommand() string {
+func getCommand() (string, error) {
 	fmt.Printf("\nEnter command > ")
 
 	var cmd string
-	fmt.Scan(&cmd)
+	if _, err := fmt.Scan(&cmd); err != nil {
+		return "", fmt.Errorf("getCommand: scan error: %w", err)
+	}
 
-	return cmd
+	return cmd, nil
 }
 
-func handleCommand(cmd string) {
+func handleCommand(cmd string) error {
 	switch cmd {
 	case cmdHelp:
 		handleHelpCmd()
 	case cmdList:
 		handleListCmd()
 	case cmdCreate:
-		handleCreateCmd()
+		return handleCreateCmd()
 	case cmdUpdate:
-		handleUpdateCmd()
+		return handleUpdateCmd()
 	case cmdDelete:
-		handleDeleteCmd()
+		return handleDeleteCmd()
 	default:
 		fmt.Printf("Unknown command: %s\n\n", cmd)
 		handleHelpCmd()
 	}
+
+	return nil
 }
 
 func handleHelpCmd() {
@@ -97,62 +109,78 @@ func handleListCmd() {
 	}
 }
 
-func handleCreateCmd() {
+func handleCreateCmd() error {
 	fmt.Println("Please provide info about new user:")
 
 	fmt.Print("ID: ")
 	var id int
-	fmt.Scan(&id)
+	if _, err := fmt.Scan(&id); err != nil {
+		return fmt.Errorf("handleCreateCmd: scan error: %w", err)
+	}
 
 	fmt.Print("Name: ")
 	var name string
-	fmt.Scan(&name)
+	if _, err := fmt.Scan(&name); err != nil {
+		return fmt.Errorf("handleCreateCmd: scan error: %w", err)
+	}
 
 	_, exists := users[id]
 	if exists {
 		fmt.Printf("User with ID %d is already exist\n", id)
 
-		return
+		return nil
 	}
 
 	users[id] = name
 
 	fmt.Println("User successfully created!")
+
+	return nil
 }
 
-func handleUpdateCmd() {
+func handleUpdateCmd() error {
 	fmt.Print("Enter user ID to update: ")
 	var id int
-	fmt.Scan(&id)
+	if _, err := fmt.Scan(&id); err != nil {
+		return fmt.Errorf("handleUpdateCmd: scan error: %w", err)
+	}
 
 	name, exists := users[id]
 	if !exists {
 		fmt.Printf("User with ID %d does not exist\n", id)
 
-		return
+		return nil
 	}
 
 	fmt.Printf("Current Name: %s\nEnter new name: ", name)
-	fmt.Scan(&name)
+	if _, err := fmt.Scan(&name); err != nil {
+		return fmt.Errorf("handleUpdateCmd: scan error: %w", err)
+	}
 
 	users[id] = name
 
 	fmt.Println("User successfully updated!")
+
+	return nil
 }
 
-func handleDeleteCmd() {
+func handleDeleteCmd() error {
 	fmt.Print("Enter user ID to delete: ")
 	var id int
-	fmt.Scan(&id)
+	if _, err := fmt.Scan(&id); err != nil {
+		return fmt.Errorf("handleDeleteCmd: scan error: %w", err)
+	}
 
 	_, exists := users[id]
 	if !exists {
 		fmt.Printf("User with ID %d does not exist\n", id)
 
-		return
+		return nil
 	}
 
 	delete(users, id)
 
 	fmt.Println("User successfully deleted!")
+
+	return nil
 }
