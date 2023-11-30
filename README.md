@@ -31,6 +31,7 @@ Code from lectures of Golang course in IT Education Academy.
 25. [Database](database)
 26. [Unit tests](unit_tests)
 27. [Integration tests (godog)](integration_tests)
+28. [Type conversion](type_conversion.go)
 
 ## Solutions
 
