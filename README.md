@@ -34,6 +34,7 @@ Code from lectures of Golang course in IT Education Academy.
 28. [Type conversion](type_conversion.go)
 29. [Type assertion](type_assertion.go)
 30. [JSON](json)
+31. [HTTP Client](http_client)
 
 ## Solutions
 
