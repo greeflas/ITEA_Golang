@@ -33,6 +33,7 @@ Code from lectures of Golang course in IT Education Academy.
 27. [Integration tests (godog)](integration_tests)
 28. [Type conversion](type_conversion.go)
 29. [Type assertion](type_assertion.go)
+30. [JSON](json)
 
 ## Solutions
 
