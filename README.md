@@ -45,6 +45,8 @@ Here you can find solutions for part of home works.
 5. [Student testing](solutions/5_student_testing/main.go)
 7. [Student testing](solutions/7_student_testing)
 8. [Integration tests](solutions/8_integration_tests)
+8. [Unit tests: student grades](solutions/8_grades_unit_tests)
+8. [Unit tests: order](solutions/8_order_unit_tests)
 
 ## Commands
 
