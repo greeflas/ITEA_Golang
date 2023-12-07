@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package pb;
+
+option go_package = "github.com/greeflas/itea_golang/proto/pb";
+
+message Person {
+  string name = 1;
+  int64 id = 2;
+  string email = 3;
+}

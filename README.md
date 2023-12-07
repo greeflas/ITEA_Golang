@@ -37,6 +37,7 @@ Code from lectures of Golang course in IT Education Academy.
 31. [HTTP Client](http_client)
 32. [HTTP Server](server.go)
 33. [Complex HTTP Server](http_server)
+34. [Proto](proto)
 
 ## Solutions
 
