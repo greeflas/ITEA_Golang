@@ -38,6 +38,7 @@ Code from lectures of Golang course in IT Education Academy.
 32. [HTTP Server](server.go)
 33. [Complex HTTP Server](http_server)
 34. [Proto](proto)
+35. [gRPC](grpc)
 
 ## Solutions
 
