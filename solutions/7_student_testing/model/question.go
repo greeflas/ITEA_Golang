@@ -3,9 +3,9 @@ package model
 import "github.com/google/uuid"
 
 type Question struct {
-	Id      uuid.UUID
-	Text    string
-	Answers []*Answer
+	Id      uuid.UUID `json:"id"`
+	Text    string    `json:"text"`
+	Answers []*Answer `json:"answers"`
 }
 
 func NewQuestion(text string) *Question {

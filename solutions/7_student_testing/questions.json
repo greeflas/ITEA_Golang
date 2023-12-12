@@ -1,0 +1,55 @@
+[
+  {
+    "id": "47ce6c5a-b97f-4b66-a3b9-54eb3c018746",
+    "text": "What is structure in GoLang?",
+    "answers": [
+      {
+        "id": "b0bb5845-cff0-459c-acc7-1ab07db2c567",
+        "text": "Interface",
+        "is_correct": false
+      },
+      {
+        "id": "03d7d018-d541-4bda-aafe-a7c2fd32f962",
+        "text": "Typed collection of fields",
+        "is_correct": true
+      },
+      {
+        "id": "9706f4b0-7d60-44df-85b6-12705a55a7ec",
+        "text": "Pointer",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": "b054c21e-6d28-4522-b614-709544fcde38",
+    "text": "You can pass the struct to/from a function as",
+    "answers": [
+      {
+        "id": "600eddca-39c0-4254-8559-0934522e0078",
+        "text": "Value",
+        "is_correct": true
+      },
+      {
+        "id": "f804c343-e575-48d5-bfbc-72cf52727541",
+        "text": "Link",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "15c1d4aa-954c-4b4b-8855-b25efe833a34",
+    "text": "Is it possible to create a pointer to a struct?",
+    "answers": [
+      {
+        "id": "1239c5b9-b41a-419e-bf45-f567ef97af30",
+        "text": "Yes",
+        "is_correct": true
+      },
+      {
+        "id": "8dc31e52-7c66-4f3a-8374-74b8859373fb",
+        "text": "No",
+        "is_correct": false
+      }
+    ]
+  }
+]

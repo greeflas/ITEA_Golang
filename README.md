@@ -51,6 +51,7 @@ Here you can find solutions for part of home works.
 8. [Integration tests](solutions/8_integration_tests)
 8. [Unit tests: student grades](solutions/8_grades_unit_tests)
 8. [Unit tests: order](solutions/8_order_unit_tests)
+9. [JSON](solutions/9_json)
 
 ## Commands
 
