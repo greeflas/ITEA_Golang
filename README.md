@@ -46,6 +46,7 @@ Code from lectures of Golang course in IT Education Academy.
 40. [Atomic](atomic.go)
 41. [Mutex](mutex.go)
 42. [Channels](channels.go)
+43. [Close channel](close_channel.go)
 
 ## Solutions
 
