@@ -44,6 +44,7 @@ Code from lectures of Golang course in IT Education Academy.
 38. [Wait Group](wait_group.go)
 39. [Race condition](race_condition.go)
 40. [Atomic](atomic.go)
+41. [Mutex](mutex.go)
 
 ## Solutions
 
