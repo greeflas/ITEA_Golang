@@ -49,6 +49,8 @@ Code from lectures of Golang course in IT Education Academy.
 43. [Close channel](close_channel.go)
 44. [select](select.go)
 44. [select timeout](select_timeout.go)
+45. [context](context.go)
+46. [context background](context_background.go)
 
 ## Solutions
 
