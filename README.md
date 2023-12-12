@@ -41,6 +41,7 @@ Code from lectures of Golang course in IT Education Academy.
 35. [gRPC](grpc)
 36. [Sleep](sleep.go)
 37. [Goroutines](goroutines.go)
+38. [Wait Group](wait_group.go)
 
 ## Solutions
 
