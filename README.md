@@ -47,6 +47,8 @@ Code from lectures of Golang course in IT Education Academy.
 41. [Mutex](mutex.go)
 42. [Channels](channels.go)
 43. [Close channel](close_channel.go)
+44. [select](select.go)
+44. [select timeout](select_timeout.go)
 
 ## Solutions
 
