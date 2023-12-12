@@ -45,6 +45,7 @@ Code from lectures of Golang course in IT Education Academy.
 39. [Race condition](race_condition.go)
 40. [Atomic](atomic.go)
 41. [Mutex](mutex.go)
+42. [Channels](channels.go)
 
 ## Solutions
 
