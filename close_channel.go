@@ -1,30 +1,45 @@
 package main
 
 import (
+	"errors"
 	"fmt"
 	"math/rand"
 )
 
 func main() {
 	in := make(chan int)
-	errors := make(chan error)
+	errorsCh := make(chan error)
 
-	go provideNumbers(6, in, errors)
+	const maxNumbers = 6
+
+	go provideNumbers(maxNumbers, in, errorsCh)
 
 	n, ok := <-in
 	fmt.Println(n, ok)
 
-	for num := range in {
-		fmt.Println(num)
+	for i := 0; i < maxNumbers; i++ {
+		select {
+		case num := <-in:
+			fmt.Println(num)
+		case err := <-errorsCh:
+			fmt.Println("error:", err)
+		}
 	}
 
 	n, ok = <-in
 	fmt.Println(n, ok)
 }
 
-func provideNumbers(max int, out chan int, errors chan error) {
+func provideNumbers(max int, out chan int, errorsCh chan error) {
 	for i := 0; i < max; i++ {
-		out <- rand.Intn(100)
+		number := rand.Intn(100)
+
+		if number < 50 {
+			errorsCh <- errors.New("error occurred")
+			continue
+		}
+
+		out <- number
 	}
 	close(out)
 }
