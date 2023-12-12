@@ -65,6 +65,7 @@ Here you can find solutions for part of home works.
 8. [Unit tests: order](solutions/8_order_unit_tests)
 9. [JSON](solutions/9_json)
 10. [REST API](solutions/10_rest_api)
+11. [Concurrency](solutions/11_concurrency)
 
 ## Commands
 
